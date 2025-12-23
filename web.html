@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Animations</title>
+  <style>
+    :root{
+      --bg:#0f1720; 
+      --card:#0b1220; 
+      --muted:#9aa6b2; 
+      --accent:#7dd3fc; 
+      --glass: rgba(255,255,255,0.03);
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#000000 0%, #001b38 100%);
+      color:#e6eef6;
+      padding:32px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+    }
+
+    h1{
+      font-size:clamp(1.6rem, 2.8vw, 2.4rem);
+      margin:0 0 8px;
+    }
+
+    p.lead{
+      color:var(--muted);
+      margin-top:0;
+      margin-bottom:28px;
+    }
+
+    section{ margin-bottom:40px }
+    .subtitle{
+      font-size:1.1rem;
+      margin:20px 0 12px;
+      color:var(--accent);
+    }
+
+    .card-tag{
+  display:inline-block;
+  font-size:0.7rem;
+  padding:3px 8px;
+  border-radius:5px;
+  background:rgba(125, 211, 252, 0.15);
+  color:var(--accent);
+  border:1px solid rgba(125, 211, 252, 0.25);
+  margin-bottom:6px;
+  text-transform:uppercase;
+  letter-spacing:0.4px;
+}
+
+    /* --- Horizontal Scroll Rows --- */
+    .videos{
+      display:flex;
+      gap:18px;
+      overflow-x:auto;
+      padding:10px 0 14px;
+      scroll-snap-type:x mandatory;
+    }
+
+    .videos::-webkit-scrollbar{
+      height:8px;
+    }
+
+    .videos::-webkit-scrollbar-thumb{
+      background:#334155;
+      border-radius:4px;
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      padding:12px;
+      border-radius:10px;
+      min-width:280px;
+      flex:0 0 auto;
+      scroll-snap-align:start;
+    }
+
+    .video-wrap{
+      background:var(--card);
+      border-radius:8px;
+      overflow:hidden;
+      display:block;
+    }
+
+    video{
+      width:100%;
+      height:200px;
+      display:block;
+      background:#000;
+    }
+
+    .desc{
+      margin-top:8px;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .sep{
+      height:1px;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,0.03),transparent);
+      margin:18px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>FAQs</h1>
+    <p class="lead">
+      Animations are <b>delivered</b> once <b>payment</b> is <b>received</b>. If there are <b>several</b> animations, I usually ask for <b>50% in advance</b>, so I don't waste my time if something happens.<br>
+      <br>
+      The quality of the animations depends on the price, although I always try to make them look good for any budget my time is also important! <br>
+      <b>PS: If I'm the one applying for the job, it means I'm going to give it my all!</b>
+    </p>
+
+    <section>
+      <h2>Portfolio</h2>
+      <!-- =================  MISC ================= -->
+
+      <article>
+        <h3 class="subtitle">Misc Animations</h3>
+        <div class="videos">
+
+          <div class="card">
+            <div class="card-tag">Low Budget $</div>
+            <div class="video-wrap">
+              <video controls preload="metadata">
+                <source src="Misc/Yakuza Anim.mp4">
+              </video>
+          </div><p class="desc">Yakuza Finisher. 06/-/2025</p></div>
+
+          <div class="card">
+            <div class="card-tag">Low/Medium Budget $</div>
+            <div class="video-wrap">
+              <video controls preload="metadata">
+                <source src="Misc/Air Attack.mp4">
+              </video>
+          </div><p class="desc">Air Attack. 10/-/2025</p></div>
+
+          <div class="card">
+            <div class="card-tag">Low/Medium Budget $</div>
+          <div class="video-wrap"><video controls preload="metadata"><source src="Misc/Madara Anim.mp4"></video></div><p class="desc">Madara Susanoo. 10/-/2025</p></div>
+
+          <div class="card">
+            <div class="card-tag">Low/Medium Budget $</div>
+          <div class="video-wrap"><video controls preload="metadata"><source src="Misc/Naruto Barrage.mp4"></video></div><p class="desc">Naruto vs Sasuke (Barrage). 01/-/2025</p></div>
+          
+          <div class="card">
+            <div class="card-tag">High Budget $</div>
+          <div class="video-wrap"><video controls preload="metadata"><source src="Misc/Killer Punch.mp4"></video></div><p class="desc">One Inch Killer Punch. 01/-/2025</p></div>
+        </div>
+        </article>
+
+
+      <!-- ================= GREAT SWORD ================= -->
+      <article>
+        <h3 class="subtitle">GreatSword [11/-/2025]</h3>
+        <div class="videos">
+
+          <!-- Auto-generated list -->
+          
+          
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Idle.mp4"></video></div><p class="desc">Idle pose.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Unequip.mp4"></video></div><p class="desc">Unequip animation.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Blocking.mp4"></video></div><p class="desc">Blocking animation.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/M1Chain.mp4"></video></div><p class="desc">M1 Chain combo.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Lunge.mp4"></video></div><p class="desc">Lunge attack.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Ground Crit.mp4"></video></div><p class="desc">Ground Critical animation.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/AirCrit.mp4"></video></div><p class="desc">AirCrit animation.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Running [PreAttack].mp4"></video></div><p class="desc">Running pre-attack.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Running [Attack].mp4"></video></div><p class="desc">Running attack.</p></div>
+          <div class="card"><div class="card-tag">Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Greatsword/Grip.mp4"></video></div><p class="desc">Grip animation.</p></div>
+
+        </div>
+      </article>
+
+      <div class="sep"></div>
+
+      <!-- ================= Katana ================= -->
+       <article>
+        <h3 class="subtitle">Katana [10/-/2025]</h3>
+        <div class="videos">
+          <div class="card"><div class="card-tag">Low/Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Katana/Idle.mp4"></video></div><p class="desc">Idle pose.</p></div>
+          <div class="card"><div class="card-tag">Low/Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Katana/Equip.mp4"></video></div><p class="desc">Equip animation.</p></div>
+          <div class="card"><div class="card-tag">Low/Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Katana/Unequip.mp4"></video></div><p class="desc">Idle pose.</p></div>
+          <div class="card"><div class="card-tag">Low/Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Katana/Running.mp4"></video></div><p class="desc">Running animation.</p></div>
+          <div class="card"><div class="card-tag">Low/Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Katana/Grip.mp4"></video></div><p class="desc">Grip animation.</p></div>
+          <div class="card"><div class="card-tag">Low/Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Katana/Crit1.mp4"></video></div><p class="desc">Critical 1.</p></div>
+          <div class="card"><div class="card-tag">Low/Medium Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Katana/Crit2.mp4"></video></div><p class="desc">Critical 2.</p></div>
+        </div>
+       </article>
+
+      <!-- ================= SPEAR ================= -->
+      <article>
+        <h3 class="subtitle">Spear [9/-/2025]</h3>
+        <div class="videos">
+
+          <div class="card"><div class="card-tag">Low Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Spear/Idle.mp4"></video></div><p class="desc">Idle pose.</p></div>
+          <div class="card"><div class="card-tag">Low Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Spear/Equip.mp4"></video></div><p class="desc">Equip animation.</p></div>
+          <div class="card"><div class="card-tag">Low Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Spear/Running.mp4"></video></div><p class="desc">Running animation.</p></div>
+          <div class="card"><div class="card-tag">Low Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Spear/Blocking.mp4"></video></div><p class="desc">Blocking animation.</p></div>
+          <div class="card"><div class="card-tag">Low Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Spear/M1 Chain.mp4"></video></div><p class="desc">M1 Chain combo.</p></div>
+          <div class="card"><div class="card-tag">Low Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Spear/Critical.mp4"></video></div><p class="desc">Critical attack.</p></div>
+          <div class="card"><div class="card-tag">Low Budget $</div><div class="video-wrap"><video controls preload="metadata"><source src="Spear/Aerial.mp4"></video></div><p class="desc">Aerial strike.</p></div>
+        
+        </div>
+      </article>
+
+    </section>
+
+  </div>
+</body>
+</html>
